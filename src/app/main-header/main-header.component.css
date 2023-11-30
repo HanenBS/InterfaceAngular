@@ -1,0 +1,58 @@
+.menu-header {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-header > mat-button-toggle {
+  width: 100%;
+}
+
+.menu-header > .mat-button-toggle-group,
+.mat-button-toggle-standalone:not([class*=mat-elevation-z]),
+.mat-button-toggle-group:not([class*=mat-elevation-z]) {
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+:host ::ng-deep .mat-button-toggle-appearance-standard.mat-button-toggle-checked {
+  background: #2E3087;
+  color: #FFFFFF;
+}
+
+.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard + .mat-button-toggle-appearance-standard {
+  border-left: none;
+}
+:host ::ng-deep .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+    letter-spacing: 0.35px;
+  font-weight: lighter;
+  font-family: "Nunito", sans-serif;
+
+}
+
+.title {
+  display: flex;
+  text-align: left;
+  color: #212145;
+  opacity: 1;
+  padding-bottom: 30px;
+  padding-left: 13px;
+  font-size: 16px;
+}
+
+.sous-title {
+  letter-spacing: 0px;
+  font-weight: bold;
+  margin-right: 0.3rem;
+}
+
+span {
+  font-family: "Nunito", sans-serif;
+}
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
+.mat-button-toggle-group-appearance-standard {
+  --mat-standard-button-toggle-shape: 4px;
+  --mat-standard-button-toggle-hover-state-layer-opacity: 0.04;
+  --mat-standard-button-toggle-focus-state-layer-opacity: 0.12;
+  border-radius: var(--mat-standard-button-toggle-shape);
+  border: none;
+}

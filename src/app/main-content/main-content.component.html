@@ -1,0 +1,137 @@
+<div class="my-card">
+  <div class="btn">
+    <button mat-flat-button class="btn-text">Connection test</button>
+  </div>
+
+  <mat-card >
+    <mat-card-content>
+      <div fxLayout="row wrap"  fxFlex="100" fxLayout.lt-lg="column wrap">
+        <div fxLayout="row wrap"  fxFlex="100" fxFlex.lt-lg="100">
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Channel name </span>
+            <mat-form-field appearance="outline">
+              <input matInput  value="Tboholidays">
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Channel URL </span>
+            <mat-form-field appearance="outline">
+              <input matInput value="www.tboholidays.com">
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Model </span>
+            <mat-form-field  appearance="outline">
+
+              <mat-select disableRipple value="0">
+                <mat-option value="0">------</mat-option>
+                <mat-option value="1">model1</mat-option>
+                <mat-option value="2">model2</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Supplier </span>
+            <mat-form-field  appearance="outline">
+
+              <mat-select disableRipple value="0">
+                <mat-option value="0">------</mat-option>
+                <mat-option value="1">supp1</mat-option>
+                <mat-option value="2">supp2</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Payment </span>
+            <mat-radio-group aria-label="Select an option" fxLayoutGap="16px">
+              <mat-radio-button value="presPaid">Pres paid</mat-radio-button>
+              <mat-radio-button value="monthly" checked>Monthly</mat-radio-button>
+              <mat-radio-button value="realTime">Real time</mat-radio-button>
+            </mat-radio-group>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Type </span>
+            <mat-form-field  appearance="outline">
+
+              <mat-select disableRipple value="host">
+                <mat-option value="host">Hosting</mat-option>
+                <mat-option value="1">Type1</mat-option>
+                <mat-option value="2">Type2</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> User </span>
+            <mat-form-field appearance="outline">
+              <input matInput value="abcd.besmart.com">
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Password</span>
+            <mat-form-field appearance="outline">
+              <div class="eye">
+                <input matInput type="password" value="*****************" >
+                <img src="/assets/icons/show.png" alt="">
+              </div>
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> User ID </span>
+            <mat-form-field appearance="outline">
+              <input matInput value="745">
+            </mat-form-field>
+          </div>
+          <div fxFlex="50" fxLayout="column" class="form">
+            <span class="label"> Currency</span>
+            <mat-form-field  appearance="outline">
+
+              <mat-select disableRipple value="eur">
+                <mat-option value="eur">EUR</mat-option>
+                <mat-option value="usd">USD</mat-option>
+                <mat-option value="cad">CAD</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div fxFlex="25" fxLayout="column" class="form">
+            <span class="label"> Type of rate sent to channel</span>
+            <mat-radio-group aria-label="Select an option" fxLayoutGap="16px">
+              <mat-radio-button value="withTaxes" checked>With taxes</mat-radio-button>
+              <mat-radio-button value="withoutTaxes">Without taxes</mat-radio-button>
+            </mat-radio-group>
+          </div>
+
+          <div fxFlex="25" fxLayout="column" class="form">
+            <span class="label"> Taxe </span>
+            <mat-form-field appearance="outline">
+              <input matInput>
+            </mat-form-field>
+          </div>
+
+          <div fxFlex="25" fxLayout="column" class="form">
+            <mat-radio-group aria-label="Select an option" fxLayoutGap="16px">
+              <mat-radio-button value="withComm" checked>With commission</mat-radio-button>
+              <mat-radio-button value="withoutComm">Without commission</mat-radio-button>
+            </mat-radio-group>
+          </div>
+
+          <div fxFlex="25" fxLayout="column" class="form">
+            <span class="label"> Commission </span>
+            <mat-form-field appearance="outline">
+              <input matInput>
+            </mat-form-field>
+          </div>
+
+          <div fxFlex="100" fxLayout="column" class="form">
+            <span class="label"> Channel information </span>
+
+            <mat-form-field appearance="outline">
+              <textarea matInput class="desc"></textarea>
+            </mat-form-field>
+          </div>
+
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>
